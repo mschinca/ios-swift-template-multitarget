@@ -18,6 +18,10 @@
 		E02641441A3913D600365E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E026411F1A39135C00365E0F /* Main.storyboard */; };
 		E02641451A3913D600365E0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02641241A39135C00365E0F /* LaunchScreen.xib */; };
 		E02641461A3913D600365E0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02641221A39135C00365E0F /* Images.xcassets */; };
+		E0BEAD631A3918CA00C3ED02 /* myAppMock-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E026414B1A3913D600365E0F /* myAppMock-Info.plist */; };
+		E0BEAD661A39198000C3ED02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E026411A1A39135C00365E0F /* Info.plist */; };
+		E0C4355D1A3916D600FB1C61 /* Greeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4355C1A3916D600FB1C61 /* Greeter.swift */; };
+		E0C4355F1A39184F00FB1C61 /* Greeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4355E1A39184F00FB1C61 /* Greeter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,10 @@
 		E026412B1A39135D00365E0F /* myAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02641301A39135D00365E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E02641311A39135D00365E0F /* myAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAppTests.swift; sourceTree = "<group>"; };
-		E026414A1A3913D600365E0F /* myApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E026414B1A3913D600365E0F /* myApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "myApp copy-Info.plist"; path = "/Users/marcoschincaglia/tmp/iostestswifttargets/myApp/myApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		E026414A1A3913D600365E0F /* myAppMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myAppMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E026414B1A3913D600365E0F /* myAppMock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "myAppMock-Info.plist"; path = "/Users/marcoschincaglia/tmp/iostestswifttargets/myApp/myAppMock-Info.plist"; sourceTree = "<absolute>"; };
+		E0C4355C1A3916D600FB1C61 /* Greeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeter.swift; sourceTree = "<group>"; };
+		E0C4355E1A39184F00FB1C61 /* Greeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +82,9 @@
 				E026413D1A3913C000365E0F /* myLibMock */,
 				E026413C1A3913B200365E0F /* myLib */,
 				E02641181A39135C00365E0F /* myApp */,
+				E0BEAD641A39193100C3ED02 /* myAppMock */,
 				E026412E1A39135D00365E0F /* myAppTests */,
 				E02641171A39135C00365E0F /* Products */,
-				E026414B1A3913D600365E0F /* myApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +93,7 @@
 			children = (
 				E02641161A39135C00365E0F /* myApp.app */,
 				E026412B1A39135D00365E0F /* myAppTests.xctest */,
-				E026414A1A3913D600365E0F /* myApp copy.app */,
+				E026414A1A3913D600365E0F /* myAppMock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,15 +139,33 @@
 		E026413C1A3913B200365E0F /* myLib */ = {
 			isa = PBXGroup;
 			children = (
+				E0C4355C1A3916D600FB1C61 /* Greeter.swift */,
 			);
-			name = myLib;
+			path = myLib;
 			sourceTree = "<group>";
 		};
 		E026413D1A3913C000365E0F /* myLibMock */ = {
 			isa = PBXGroup;
 			children = (
+				E0C4355E1A39184F00FB1C61 /* Greeter.swift */,
 			);
-			name = myLibMock;
+			path = myLibMock;
+			sourceTree = "<group>";
+		};
+		E0BEAD641A39193100C3ED02 /* myAppMock */ = {
+			isa = PBXGroup;
+			children = (
+				E0BEAD651A39195700C3ED02 /* Suporting Files */,
+			);
+			name = myAppMock;
+			sourceTree = "<group>";
+		};
+		E0BEAD651A39195700C3ED02 /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E026414B1A3913D600365E0F /* myAppMock-Info.plist */,
+			);
+			name = "Suporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +206,9 @@
 			productReference = E026412B1A39135D00365E0F /* myAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E026413E1A3913D600365E0F /* myApp copy */ = {
+		E026413E1A3913D600365E0F /* myAppMock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E02641471A3913D600365E0F /* Build configuration list for PBXNativeTarget "myApp copy" */;
+			buildConfigurationList = E02641471A3913D600365E0F /* Build configuration list for PBXNativeTarget "myAppMock" */;
 			buildPhases = (
 				E026413F1A3913D600365E0F /* Sources */,
 				E02641421A3913D600365E0F /* Frameworks */,
@@ -194,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = "myApp copy";
+			name = myAppMock;
 			productName = myApp;
-			productReference = E026414A1A3913D600365E0F /* myApp copy.app */;
+			productReference = E026414A1A3913D600365E0F /* myAppMock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +256,7 @@
 			targets = (
 				E02641151A39135C00365E0F /* myApp */,
 				E026412A1A39135D00365E0F /* myAppTests */,
-				E026413E1A3913D600365E0F /* myApp copy */,
+				E026413E1A3913D600365E0F /* myAppMock */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BEAD661A39198000C3ED02 /* Info.plist in Resources */,
 				E02641211A39135C00365E0F /* Main.storyboard in Resources */,
 				E02641261A39135C00365E0F /* LaunchScreen.xib in Resources */,
 				E02641231A39135C00365E0F /* Images.xcassets in Resources */,
@@ -259,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BEAD631A3918CA00C3ED02 /* myAppMock-Info.plist in Resources */,
 				E02641441A3913D600365E0F /* Main.storyboard in Resources */,
 				E02641451A3913D600365E0F /* LaunchScreen.xib in Resources */,
 				E02641461A3913D600365E0F /* Images.xcassets in Resources */,
@@ -274,6 +300,7 @@
 			files = (
 				E026411E1A39135C00365E0F /* ViewController.swift in Sources */,
 				E026411C1A39135C00365E0F /* AppDelegate.swift in Sources */,
+				E0C4355D1A3916D600FB1C61 /* Greeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +318,7 @@
 			files = (
 				E02641401A3913D600365E0F /* ViewController.swift in Sources */,
 				E02641411A3913D600365E0F /* AppDelegate.swift in Sources */,
+				E0C4355F1A39184F00FB1C61 /* Greeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,9 +487,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "myApp copy-Info.plist";
+				INFOPLIST_FILE = "myAppMock-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "myApp copy";
+				PRODUCT_NAME = myAppMock;
 			};
 			name = Debug;
 		};
@@ -469,9 +497,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "myApp copy-Info.plist";
+				INFOPLIST_FILE = "myAppMock-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "myApp copy";
+				PRODUCT_NAME = myAppMock;
 			};
 			name = Release;
 		};
@@ -494,6 +522,7 @@
 				E02641371A39135D00365E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E02641381A39135D00365E0F /* Build configuration list for PBXNativeTarget "myAppTests" */ = {
 			isa = XCConfigurationList;
@@ -502,8 +531,9 @@
 				E026413A1A39135D00365E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E02641471A3913D600365E0F /* Build configuration list for PBXNativeTarget "myApp copy" */ = {
+		E02641471A3913D600365E0F /* Build configuration list for PBXNativeTarget "myAppMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E02641481A3913D600365E0F /* Debug */,
